@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+:root {
+  --main-color: #ff6b82;
+}
+.parent {
+  width: 45%;
+  min-width: 400px;
+  max-width: 550px;
+  height: 100%;
+  max-height: 800px;
+  min-height: 500px;
+  margin: auto;
+  
+  overflow: hidden;
+  padding: 5px;
+  box-sizing: border-box;
+  
+}
+/* .container{
+  
+ 
+
+} */
+.relative{
+  position: relative;
+ 
+}
+.tag{
+  position: absolute;
+  right: 0;
+  top: -8px;
+  padding: 5px;
+  border-radius: 0px 0px 5px 5px;
+  color: white;
+  font-weight: 600;
+  background-color: #ff6b82;
+  margin-right: 10px;
+}
+.triangle {
+  position: absolute;
+  right: 148.9px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent; /* Half the width */
+  border-bottom: 8px solid rgb(213, 92, 92); /* Full height */
+}
+.triangle1 {
+  position: absolute;
+  right: 2px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-right: 8px solid transparent; /* Half the width */
+  border-bottom: 8px solid rgb(213, 92, 92); /* Full height */
+}
+
+.heading_section {
+  width: 100%;
+  height: 10%;
+
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head_tag {
+  width: 100%;
+  margin: auto;
+  color: var(--main-color);
+  font-size: 0.9rem;
+  align-items: center;
+}
+.dummy_line {
+  width: 65%;
+  border: 1.4px solid #c8c8c8;
+  margin: auto;
+}
+
+/* first box */
+.box {
+  width: 100%;
+  height: 120px;
+  margin-top: 1rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1.5px solid grey;
+  border-radius: 5px;
+}
+
+.expanded{
+  height: 270px;
+  border: 2px solid var(--main-color);
+  background-color: #f7e4e7;
+}
+.box:hover {
+  /* height: 270px; */
+  border: 2px solid var(--main-color);
+  background-color: #f7e4e7;
+}
+
+.first_main {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 0rem 2rem;
+  box-sizing: border-box;
+}
+.radio_btn {
+  width: 1.4rem;
+  background-color: red;
+}
+
+.radio_btn:checked {
+  background-color: red;
+  color: red;
+  background-color: pink;
+}
+
+.first_sub_first {
+  /* width: 40%; */
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.first_sub_sec {
+  /* width: 30%; */
+  margin: auto 0px;
+  text-align: start;
+}
+
+.price_box {
+ text-align: center;
+  align-items: center;
+  margin-top: auto;
+  margin-left: 10px;
+  margin-bottom: auto;
+}
+
+.percentage_box {
+  background-color: var(--main-color);
+  padding: 0.3rem;
+  margin: 0px 0.5rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  color: white;
+}
+.price_box > p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+.current_price {
+  font-size: 1.4rem;
+}
+.cut_price {
+  text-decoration: line-through;
+  color: grey;
+}
+.hide_main_box {
+  width: 55%;
+  justify-content: end;
+}
+.hide_box {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: end;
+}
+.hide_box > p {
+  display: flex;
+  align-items: flex-end;
+}
+.select_sec {
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.3rem;
+}
+.hide_box_select {
+  width: 30%;
+}
+label {
+  font-size: 0.8rem;
+}
+
+/* footer */
+.footer_section {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+}
+.delivery {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.footer_total_price {
+  font-weight: 600;
+}
+
+.cart_btn {
+  width: 100%;
+  padding: 1rem 0rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
